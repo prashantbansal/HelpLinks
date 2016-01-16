@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/HelpLinks.Master" AutoEventWireup="true" CodeBehind="EnumerationList.aspx.cs" Inherits="HelpLinks.HLPages.EnumerationList" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/HelpLinks.Master" Title="Enumerations" AutoEventWireup="true" CodeBehind="EnumerationList.aspx.cs" Inherits="HelpLinks.HLPages.EnumerationList" %>
 
 <asp:Content runat="server" ID="HeadContent" ContentPlaceHolderID="HLHeadContent">
     <style type="text/css">

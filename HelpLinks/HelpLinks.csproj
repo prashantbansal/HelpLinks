@@ -66,10 +66,9 @@
     <Content Include="Images\orderedList7.png" />
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
-    <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="LandingPage.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="packages.config" />
     <Content Include="HelpLinks.Master" />
     <Content Include="Scripts\Bootstrap\v3.0.0\bootstrap.min.js" />
@@ -99,13 +98,6 @@
     <Compile Include="HelpLinks.Master.designer.cs">
       <DependentUpon>HelpLinks.Master</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -123,12 +115,12 @@
     <Compile Include="HLPages\Links.aspx.designer.cs">
       <DependentUpon>Links.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LandingPage.aspx.cs">
-      <DependentUpon>LandingPage.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LandingPage.aspx.designer.cs">
-      <DependentUpon>LandingPage.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -7,11 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HelpLinks
-{
-
-
-    public partial class _Default
-    {
+namespace HelpLinks {
+    
+    
+    public partial class Default {
     }
 }
