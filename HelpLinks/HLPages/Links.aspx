@@ -66,33 +66,31 @@
         OAM Links   
     </div>
     <div class="buttonRow">
-        <div class="cellOne">
-            <form name="OAM_QA" action="http://store.qa01.kaptest.net:8840/csr/en/login.jsp" method="post">
-
+        <div class="cellOne" style="display: none;">
+            <form name="loginCSRQA" action="http://store.qa01.kaptest.net:8840/csr/en/login.jsp" method="post">
                 <input type="hidden" name="login" value="imasud">
-
                 <input type="hidden" name="password" value="kaplan">
-
+                <input type="submit" class="cellOneButton" value="OAM-QA">
+            </form>
+        </div>
+        <div class="cellOne">
+            <form name="loginCSRQA" action="http://store.qa01.kaptest.net:8840/csr/en/login.jsp" method="post">
+                <input type="hidden" name="login" value="imasud">
+                <input type="hidden" name="password" value="kaplan">
                 <input type="submit" class="cellOneButton" value="OAM-QA">
             </form>
         </div>
         <div class="cellTwo">
             <form name="OAM_STG" action="http://store.stg.kaptest.net:8940/csr/en/login.jsp;jsessionid=0I1AXEQF3WSWZLASAOQSF3VMCIB0CI2C" method="post">
-
                 <input type="hidden" name="login" value="ans">
-
                 <input type="hidden" name="password" value="kaplan">
-
                 <input type="submit" class="cellTwoButton" value="OAM-STG">
             </form>
         </div>
         <div class="cellThree">
             <form name="OAM_PROD" action="http://services.kaptest.com:8740/csr/en/login.jsp" method="post">
-
                 <input type="hidden" name="login" value="kaswani">
-
                 <input type="hidden" name="password" value="qf7Fx%Z#">
-
                 <input type="submit" class="cellThreeButton" value="OAM Production">
             </form>
         </div>
@@ -115,13 +113,13 @@
         Slingshot Dev Links
     </div>
     <div class="buttonRow">
-        <div class="cellOne" style="font-weight:bold" id="dev101">
+        <div class="cellOne" style="font-weight: bold" id="dev101">
             Previous Release Branch
         </div>
-        <div class="cellTwo" style="font-weight: bold;background-color: lightskyblue" id="dev100">
+        <div class="cellTwo" style="font-weight: bold; background-color: lightskyblue" id="dev100">
             Current Development Branch
         </div>
-        <div class="cellThree" style="font-weight:bold" id="dev80">
+        <div class="cellThree" style="font-weight: bold" id="dev80">
         </div>
     </div>
     <div class="buttonRow">
