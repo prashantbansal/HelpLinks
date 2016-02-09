@@ -34,6 +34,7 @@
 
         .cellThree {
             float: right;
+            width:30%
         }
 
         .cellOneButton {
@@ -114,12 +115,13 @@
     </div>
     <div class="buttonRow">
         <div class="cellOne" style="font-weight: bold" id="dev101">
+            &nbsp;
+        </div>
+        <div class="cellTwo" style="font-weight: bold; background-color: lightgoldenrodyellow" id="dev80">
             Previous Release Branch
         </div>
-        <div class="cellTwo" style="font-weight: bold; background-color: lightskyblue" id="dev100">
+        <div class="cellThree" style="font-weight: bold;background-color: lightskyblue" id="dev100">
             Current Development Branch
-        </div>
-        <div class="cellThree" style="font-weight: bold" id="dev80">
         </div>
     </div>
     <div class="buttonRow">
@@ -128,12 +130,12 @@
             <input type="button" class="cellOneButton" onclick="javascript: window.location.href = 'http://kbrcms.dev101.kaplan.com';" value="Dev 101 CMS">
         </div>
         <div class="cellTwo">
-            <input type="button" class="cellTwoButton" onclick="javascript: window.location.href = 'http://kbr.dev80.kaplan.com';" value="Dev Flashcards">
-            <input type="button" class="cellTwoButton" onclick="javascript: window.location.href = 'http://kbrcms.dev80.kaplan.com';" value="Dev Flashcards CMS">
+            <input type="button" class="cellTwoButton" onclick="javascript: window.location.href = 'http://kbr.dev80.kaplan.com';" value="Dev Feedback">
+            <input type="button" class="cellTwoButton" onclick="javascript: window.location.href = 'http://kbrcms.dev80.kaplan.com';" value="Dev Feedback CMS">
         </div>
         <div class="cellThree">
-            <input type="button" class="cellThreeButton" onclick="javascript: window.location.href = 'http://kbr.dev100.kaplan.com';" value="Dev Feedback">
-            <input type="button" class="cellThreeButton" onclick="javascript: window.location.href = 'http://kbrcms.dev100.kaplan.com';" value="Dev Feedback CMS">
+            <input type="button" class="cellThreeButton" onclick="javascript: window.location.href = 'https://kbrdev100.kaplan.com';" value="Dev Flashcards">
+            <input type="button" class="cellThreeButton" onclick="javascript: window.location.href = 'https://kbrcmsdev100.kaplan.com';" value="Dev Flashcards CMS">
         </div>
     </div>
     <div class="headerRow">
