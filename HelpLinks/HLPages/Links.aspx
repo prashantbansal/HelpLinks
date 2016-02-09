@@ -52,7 +52,7 @@
         }
 
         .cellThreeButton {
-            width: 150px;
+            width: 158px;
             height: 40px;
             color: red;
             font-weight: bold;
