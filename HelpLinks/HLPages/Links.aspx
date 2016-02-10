@@ -34,7 +34,7 @@
 
         .cellThree {
             float: right;
-            width:30%
+            width: 30%;
         }
 
         .cellOneButton {
@@ -71,6 +71,7 @@
             <form name="loginCSRQA" action="http://store.qa01.kaptest.net:8840/csr/en/login.jsp" method="post">
                 <input type="hidden" name="login" value="imasud">
                 <input type="hidden" name="password" value="kaplan">
+                
                 <input type="submit" class="cellOneButton" value="OAM-QA">
             </form>
         </div>
@@ -120,7 +121,7 @@
         <div class="cellTwo" style="font-weight: bold; background-color: lightgoldenrodyellow" id="dev80">
             Previous Release Branch
         </div>
-        <div class="cellThree" style="font-weight: bold;background-color: lightskyblue" id="dev100">
+        <div class="cellThree" style="font-weight: bold; background-color: lightskyblue" id="dev100">
             Current Development Branch
         </div>
     </div>
