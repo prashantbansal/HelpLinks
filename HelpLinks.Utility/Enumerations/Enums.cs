@@ -19,19 +19,33 @@ namespace KBR.Entity.Enums
 
     public enum UserRoles
     {
+        [Display(Name = "All")]
         AllRoles = -2,
+        [Display(Name = "Anonymous")]
         Anonymous = -1,
+        [Display(Name = "Student")]
         Student = 1,
+        [Display(Name = "None")]
         None = 0,
+        [Display(Name = "Demo User Student")]
         DemoUserStudent = 2,
+        [Display(Name = "ASP")]
         ASP = 3,
+        [Display(Name = "ARC Infilaw")]
         ARCInfiLawStaff = 4,
+        [Display(Name = "Grader")]
         EssayGrader = 11,
+        [Display(Name = "Grader Manager")]
         GraderManager = 12,
+        [Display(Name = "Local Admin")]
         LocalAdmin = 21,
+        [Display(Name = "Academic Admin")]
         AcademicAdmin = 22,
+        [Display(Name = "Super Admin")]
         SuperAdmin = 25,
+        [Display(Name = "Grader Super Admin")]
         GraderSuperAdmin = 28,
+        [Display(Name = "Institutional Dashboard User")]
         InstitutionalDashboardUser = 29
     }
 
@@ -113,18 +127,10 @@ namespace KBR.Entity.Enums
     /// </summary>
     public enum FSPAssignmentType
     {
-        /// <summary>
-        /// Enumeration Constant for Core
-        /// </summary>
-        Core,
-        /// <summary>
-        /// Enumeration Constant for Fundamental
-        /// </summary>
-        Fundamental,
-        /// <summary>
-        /// Enumeration Constant for Practice
-        /// </summary>
-        Practice
+        All = -1,
+        Core = 0,
+        Fundamental = 1,
+        Practice = 2
     }
 
     /// <summary>
@@ -192,7 +198,8 @@ namespace KBR.Entity.Enums
     public enum PostingType
     {
         CourseMaterial = 1,
-        DiagnosticReport = 2
+        DiagnosticReport = 2,
+        AskAnExpert = 4
     }
 
     public enum CourseGroup
@@ -285,8 +292,8 @@ namespace KBR.Entity.Enums
         ApplicationVariables = 1,
         IPHomePage = 2,
         IPDiagnostics = 3,
-        WebConfig = 4,
-        Course = 5
+        EssayGrader = 4,
+        CycleDetails = 5
     }
 
     public enum Platform
@@ -557,19 +564,33 @@ namespace KBR.Entity.Enums
 
     public enum AssignmentFormats
     {
+        [Display(Name = "AllTypes")]
         AllTypes = -2,
+        [Display(Name = "Other")]
         Other = -1,
+        [Display(Name = "None")]
         None = 0,
+        [Display(Name = "Checkpoint Quiz")]
         CheckpointQuiz = 1,
+        [Display(Name = "Practice Test")]
         PracticeTest = 2,
+        [Display(Name = "QBank")]
         Quizbank = 3,
+        [Display(Name = "Essay")]
         Essay = 4,
+        [Display(Name = "Diagnostic")]
         DiagnosticQuiz = 6,
+        [Display(Name = "Flex Flashcard")]
         Flashcard = 7,
+        [Display(Name = "Workbook")]
         Reading = 101,
+        [Display(Name = "Video")]
         Video = 102,
+        [Display(Name = "Miscellaneous")]
         Miscellaneous = 103,
+        [Display(Name = "Notes")]
         Notes = 104,
+        [Display(Name = "Strength and Weakness Guide")]
         ReviewTopicInPSP = 201
     }
 
@@ -961,7 +982,9 @@ namespace KBR.Entity.Enums
         FlexPerformance = 6,
         DailyAssignments = 7,
         Engagement = 8,
-        LiveSimulcast = 9
+        LiveSimulcast = 9,
+        MeetYourGrader = 10,
+        ProgressToDate = 11
     }
     public enum ReleaseCycle
     {
@@ -1017,6 +1040,9 @@ namespace KBR.Entity.Enums
         IPLawSchoolNotAvailable = 1,
         ARCInfilawIncorrectLawSchool = 2,
         AAECoachEmailUnsubscribed = 3,
+        GBRTechSupport = 4,
+        PMBRTechSupport = 5,
+        MakerPrepTechSupport = 6
     }
 
 
@@ -1045,6 +1071,7 @@ namespace KBR.Entity.Enums
 
     public enum UserProfileStatus
     {
+        All = -1,
         Inactive = 0,
         Active = 1,
         Deleted = 2
@@ -1080,6 +1107,9 @@ namespace KBR.Entity.Enums
         AAECoach = 16,
         LiveSimulcastHandraising = 17,
         EmailScriptUpdates = 18,
+        EmailSchedulerJobs = 19,
+        EmailEssayHandOffSettings = 20,
+        EmailGenerics = 21,
     }
 
     public enum EmailStatus
@@ -1095,7 +1125,8 @@ namespace KBR.Entity.Enums
         AAECoachEmailer = 2,
         QuizReopen = 3,
         EssayGradingRollback = 4,
-        ScriptUpdate = 5
+        ScriptUpdate = 5,
+        StudentMigration = 6
     }
 
     public enum DownloadFrom
@@ -1138,8 +1169,8 @@ namespace KBR.Entity.Enums
     {
         NoAccess = 0,
         FullAccess = 1,
-        TabDisabled = 3,
-        PageDisabled = 4,
+        DisabledLink = 3,
+        DisabledPage = 4,
     }
 
     public enum StateSkillGroup
@@ -1170,7 +1201,8 @@ namespace KBR.Entity.Enums
         SchedulerGeneric = 5,
         LawSchoolUpdate = 6,
         AAECoach = 7,
-        ClassInformationUpdate = 8
+        ClassInformationUpdate = 8,
+        AttendanceUpdate = 9
     }
 
     public enum RunStatus
@@ -1206,6 +1238,7 @@ namespace KBR.Entity.Enums
         KBR,
         PMBR,
         Kaptest,
+        MakerPrep
     }
 
     public enum VideoPlayerVersion
@@ -1347,6 +1380,7 @@ namespace KBR.Entity.Enums
     }
     public enum DeviceType : byte
     {
+        None = 0,
         iOS = 1,
         Android = 2,
         Windows = 3
@@ -1368,6 +1402,32 @@ namespace KBR.Entity.Enums
         LawSchoolAdmin = 2
     }
 
+    public enum TimeLimit
+    {
+        [Display(Name = "1.8 minutes")]
+        OnePointEightMins = 1,
+        [Display(Name = "2.0 minutes")]
+        TwoMins = 2,
+        [Display(Name = "2.5 minutes")]
+        TwoPointFiveMins = 3,
+        [Display(Name = "Unlimited")]
+        Unlimited = 4,
+        [Display(Name = "Tutor Mode")]
+        TutorMode = 5
+    }
+
+    public enum QbuilderOptions
+    {
+        [Display(Name = "None")]
+        None = -1,
+        [Display(Name = "Never Show")]
+        NeverShow = 0,
+        [Display(Name = "Always Show")]
+        AlwaysShow = 1,
+        [Display(Name = "Show After")]
+        ShowAfter = 2,
+    }
+
     public enum QbuilderQuizStatus
     {
         none = -1,
@@ -1380,7 +1440,7 @@ namespace KBR.Entity.Enums
     {
         Active = 1,
         Completed = 2,
-        Cancelled = 3
+        Canceled = 3
     }
 
     public enum InstitutionalSemester
@@ -1415,12 +1475,16 @@ namespace KBR.Entity.Enums
     {
         ScaleOfFive = 5,
         ScaleOfThree = 3,
+        ScaleOfFour = 4,
+        ScaleOfTen = 10,
     }
 
     public enum RatingCategory
     {
         None = -1,
-        Grader = 1
+        Grader = 1,
+        Video = 2,
+        LiveSimulcast = 3
     }
 
     public enum AssociationStatus
@@ -1441,5 +1505,66 @@ namespace KBR.Entity.Enums
         Generic = 1,
         Feedback = 2
     }
+    public enum LiveAttendanceStatus
+    {
+        Open = 1,
+        UpdatedInKBS = 2,
+        AttendanceAlreadyUpdated = 3,
+        Error = 4
+    }
 
+    public enum ValidationType
+    {
+        Notification = 1,
+        Error = 2,
+        NoError = 3,
+        NoUpdate = 4
+    }
+
+    public enum StudentMigrationType
+    {
+        [Display(Name = "Qbank")]
+        Qbank1 = 1,
+        [Display(Name = "Qbank")]
+        Qbank2 = 2,
+        [Display(Name = "Flex")]
+        Flex = 3
+    }
+
+    public enum StudentMigrationStatus
+    {
+        None = -1,
+        Success = 1,
+        Failed = 2
+    }
+
+    public enum IntegratorCommand
+    {
+        Register = 1,
+        Login = 2
+    }
+
+    public enum CourseFilter
+    {
+        All = -1,
+        PMBR = 1,
+        NonPMBR = 2,
+        MakerPrep = 3
+    }
+
+    public enum Via
+    {
+        IOS = 1,
+        Android = 2,
+        Web = 3
+    }
+
+    public enum ProductType
+    {
+        None = -1,
+        KBR = 1,
+        PMBR = 2,
+        Reports = 3,
+        MakerPrep = 4
+    }
 }

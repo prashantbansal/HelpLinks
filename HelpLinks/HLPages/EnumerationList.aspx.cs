@@ -17,6 +17,7 @@ namespace HelpLinks.HLPages
         protected void Page_Load(object sender, EventArgs e)
         {
             BindEnumDropdown();
+            GetAllEnumsData();
         }
 
         private void BindEnumDropdown()
@@ -40,6 +41,11 @@ namespace HelpLinks.HLPages
         }
 
         protected void btnGetAllData_OnClick(object sender, EventArgs e)
+        {
+            GetAllEnumsData();
+        }
+
+        private void GetAllEnumsData()
         {
             _enumClassList = EnumReader.GetAllEnumDetailsList();
             if (_enumClassList != null && _enumClassList.Any())
