@@ -293,7 +293,8 @@ namespace KBR.Entity.Enums
         IPHomePage = 2,
         IPDiagnostics = 3,
         EssayGrader = 4,
-        CycleDetails = 5
+        CycleDetails = 5,
+        QFormative = 6
     }
 
     public enum Platform
@@ -366,12 +367,13 @@ namespace KBR.Entity.Enums
 
     public enum CourseUpdateSortOrder
     {
-        UpdatedOn,
+        StartsOn,
         Title,
         Attachments,
         Recipient,
         Alias,
-        ExpiresOn
+        ExpiresOn,
+        UpdatedOn
     }
 
     public enum CompilationTable
@@ -750,12 +752,8 @@ namespace KBR.Entity.Enums
         TopicView = 2
     }
 
-    public enum MidtermOrFinals
-    {
-        NA = -1,
-        MBE_Midterm = 1,
-        MBE_Final = 2
-    }
+
+
 
     public enum FileChangedTypes
     {
@@ -954,6 +952,7 @@ namespace KBR.Entity.Enums
         FlashcardQuizbank = 17,
         Home = 18,
         FormativeQBank = 19,
+        QFormative = 20
     }
 
     public enum FeatureOptions
@@ -1235,9 +1234,13 @@ namespace KBR.Entity.Enums
 
     public enum RedirectedVia
     {
+        [ConstStr("KBR")]
         KBR,
+        [ConstStr("PMBR")]
         PMBR,
+        [ConstStr("KBR")]
         Kaptest,
+        [ConstStr("MakerPrep")]
         MakerPrep
     }
 
@@ -1566,5 +1569,45 @@ namespace KBR.Entity.Enums
         PMBR = 2,
         Reports = 3,
         MakerPrep = 4
+    }
+    public enum AttendanceVia
+    {
+        None = -1,
+        Web = 1,
+        iOS = 2,
+        Android = 3
+    }
+
+    //public enum QuestionType
+    //{
+    //    [Display(Name = "CheckPoint Quiz")]
+    //    CheckPointQuiz =1,
+    //    [Display(Name = "Practice Test")]
+    //    PracticeTest = 2,
+    //    [Display(Name = "QuizBank")]
+    //    QuizBank = 3,
+    //    [Display(Name = "Essay")]
+    //    Essay = 3,
+    //    [Display(Name = "Flashcard QuizBank")]
+    //    Flashcard = 4,
+    //    [Display(Name = "Diagonostic Quiz")]
+    //    DiagonosticQuiz = 5,
+    //    [Display(Name = "FeedBack Quiz")]
+    //    FeedBackQuiz = 6,
+
+    //}
+    public enum ContainerSubTypes
+    {
+        [Display(Name = "NA")]
+        NA = -1,
+        [Display(Name = "Midterm")]
+        Midterm = 1,
+        [Display(Name = "Final")]
+        Final = 2,
+        [Display(Name = "QFormative")]
+        QFormative = 3,
+        [Display(Name = "Simulated Practice Exam")]
+        SPE = 4
+
     }
 }
