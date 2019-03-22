@@ -9,42 +9,29 @@ namespace KBR.Entity.Enums
     {
         [Display(Name = "Adequate data present")]
         Adequate_data_present = 0,
-        [Display(Name = "No data available")]
-        No_data_available = 1,
+        [Display(Name = "No data available")] No_data_available = 1,
+
         [Display(Name = "Limited data available")]
         Limitted_data_available = 2,
-        [Display(Name = "")]
-        Not_Selected = -1
+        [Display(Name = "")] Not_Selected = -1
     }
 
     public enum UserRoles
     {
-        [Display(Name = "All")]
-        AllRoles = -2,
-        [Display(Name = "Anonymous")]
-        Anonymous = -1,
-        [Display(Name = "Student")]
-        Student = 1,
-        [Display(Name = "None")]
-        None = 0,
-        [Display(Name = "Demo User Student")]
-        DemoUserStudent = 2,
-        [Display(Name = "ASP")]
-        ASP = 3,
-        [Display(Name = "ARC Infilaw")]
-        ARCInfiLawStaff = 4,
-        [Display(Name = "Grader")]
-        EssayGrader = 11,
-        [Display(Name = "Grader Manager")]
-        GraderManager = 12,
-        [Display(Name = "Local Admin")]
-        LocalAdmin = 21,
-        [Display(Name = "Academic Admin")]
-        AcademicAdmin = 22,
-        [Display(Name = "Super Admin")]
-        SuperAdmin = 25,
-        [Display(Name = "Grader Super Admin")]
-        GraderSuperAdmin = 28,
+        [Display(Name = "All")] AllRoles = -2,
+        [Display(Name = "Anonymous")] Anonymous = -1,
+        [Display(Name = "Student")] Student = 1,
+        [Display(Name = "None")] None = 0,
+        [Display(Name = "Demo User Student")] DemoUserStudent = 2,
+        [Display(Name = "ASP")] ASP = 3,
+        [Display(Name = "ARC Infilaw")] ARCInfiLawStaff = 4,
+        [Display(Name = "Grader")] EssayGrader = 11,
+        [Display(Name = "Grader Manager")] GraderManager = 12,
+        [Display(Name = "Local Admin")] LocalAdmin = 21,
+        [Display(Name = "Academic Admin")] AcademicAdmin = 22,
+        [Display(Name = "Super Admin")] SuperAdmin = 25,
+        [Display(Name = "Grader Super Admin")] GraderSuperAdmin = 28,
+
         [Display(Name = "Institutional Dashboard User")]
         InstitutionalDashboardUser = 29
     }
@@ -109,6 +96,7 @@ namespace KBR.Entity.Enums
         None = 0,
         Normal = 1,
         MPT = 2,
+
         ShortQuestion = 3
         //MainContentSA = 3,  //TX
         //SelfContentSA = 4  // VA 
@@ -142,19 +130,23 @@ namespace KBR.Entity.Enums
         /// 
         /// </summary>
         Perday6hrs = 6,
+
         /// <summary>
         /// 
         /// </summary>
         Perday8hrs = 8,
+
         /// <summary>
         /// 
         /// </summary>
         Perday10hrs = 10,
+
         /// <summary>
         /// 
         /// </summary>
         Perday12hrs = 12
     }
+
     public enum VisibilityTypes
     {
         NeverShow = 0,
@@ -239,29 +231,20 @@ namespace KBR.Entity.Enums
 
     public enum SessionType
     {
-        [Display(Name = "Intro Message")]
-        IntroMessage = 1,
-        [Display(Name = "Quiz Section")]
-        QuizSection = 2,
-        [Display(Name = "Day Break")]
-        BreakWithoutTime = 3,
-        [Display(Name = "Break")]
-        BreakWithTime = 4,
-        [Display(Name = "End Message")]
-        EndMessage = 5
+        [Display(Name = "Intro Message")] IntroMessage = 1,
+        [Display(Name = "Quiz Section")] QuizSection = 2,
+        [Display(Name = "Day Break")] BreakWithoutTime = 3,
+        [Display(Name = "Break")] BreakWithTime = 4,
+        [Display(Name = "End Message")] EndMessage = 5
     }
 
     [Serializable]
     public enum AttachmentCategory
     {
-        [XmlEnum("-1")]
-        NotApplicable = -1,
-        [XmlEnum("1")]
-        L1 = 1,
-        [XmlEnum("2")]
-        L2 = 2,
-        [XmlEnum("3")]
-        L3 = 3
+        [XmlEnum("-1")] NotApplicable = -1,
+        [XmlEnum("1")] L1 = 1,
+        [XmlEnum("2")] L2 = 2,
+        [XmlEnum("3")] L3 = 3
     }
 
     public enum LawSchoolCategory
@@ -312,46 +295,30 @@ namespace KBR.Entity.Enums
 
     public enum GraderDashboard
     {
-        [Display(Name = "Essays Graded")]
-        EssaysGraded = 1,
-        [Display(Name = "Estimated Earnings")]
-        EstimatedEarnings = 2,
+        [Display(Name = "Essays Graded")] EssaysGraded = 1,
+        [Display(Name = "Estimated Earnings")] EstimatedEarnings = 2,
     }
 
     public enum GraderAdminDashboard
     {
-        [Display(Name = "Essays Graded")]
-        EssaysGraded = 1,
-        [Display(Name = "Unassigned")]
-        Unassigned = 2,
-        [Display(Name = "Quarantined")]
-        Quarantined = 3,
-        [Display(Name = "In Progress")]
-        InProgress = 4,
-        [Display(Name = "Completed")]
-        Completed = 5,
-        [Display(Name = "Total")]
-        Total = 6
+        [Display(Name = "Essays Graded")] EssaysGraded = 1,
+        [Display(Name = "Unassigned")] Unassigned = 2,
+        [Display(Name = "Quarantined")] Quarantined = 3,
+        [Display(Name = "In Progress")] InProgress = 4,
+        [Display(Name = "Completed")] Completed = 5,
+        [Display(Name = "Total")] Total = 6
     }
 
     public enum GraderSuperAdminDashboard
     {
-        [Display(Name = "Essays Graded")]
-        EssaysGraded = 1,
-        [Display(Name = "Unassigned")]
-        Unassigned = 2,
-        [Display(Name = "Quarantined")]
-        Quarantined = 3,
-        [Display(Name = "In Progress")]
-        InProgress = 4,
-        [Display(Name = "Completed")]
-        Completed = 5,
-        [Display(Name = "Total")]
-        Total = 6,
-        [Display(Name = "Billed")]
-        Billed = 7,
-        [Display(Name = "UnBilled")]
-        UnBilled = 8
+        [Display(Name = "Essays Graded")] EssaysGraded = 1,
+        [Display(Name = "Unassigned")] Unassigned = 2,
+        [Display(Name = "Quarantined")] Quarantined = 3,
+        [Display(Name = "In Progress")] InProgress = 4,
+        [Display(Name = "Completed")] Completed = 5,
+        [Display(Name = "Total")] Total = 6,
+        [Display(Name = "Billed")] Billed = 7,
+        [Display(Name = "UnBilled")] UnBilled = 8
     }
 
     public enum RecipientType
@@ -516,30 +483,18 @@ namespace KBR.Entity.Enums
 
     public enum ContainerTypes
     {
-        [Display(Name = "Early Study Plan")]
-        EarlyStudyPlan = -4,
-        [Display(Name = "Final Study Plan")]
-        FinalStudyPlan = -3,
-        [Display(Name = "All Types")]
-        AllTypes = -2,
-        [Display(Name = "Other")]
-        Other = -1,
-        [Display(Name = "Check Point Quiz")]
-        CheckpointQuiz = 1,
-        [Display(Name = "Practice Test")]
-        PracticeTest = 2,
-        [Display(Name = "Quizbank")]
-        Quizbank = 3,
-        [Display(Name = "Essay")]
-        Essay = 4,
-        [Display(Name = "Flashcard Quizbank")]
-        FlashcardQuizbank = 5,
-        [Display(Name = "Diagnostic Quiz")]
-        DiagnosticQuiz = 6,
-        [Display(Name = "Qbuilder Quiz")]
-        QbuilderQuiz = 7,
-        [Display(Name = "Feedback Quiz")]
-        FeedbackQuiz = 8,
+        [Display(Name = "Early Study Plan")] EarlyStudyPlan = -4,
+        [Display(Name = "Final Study Plan")] FinalStudyPlan = -3,
+        [Display(Name = "All Types")] AllTypes = -2,
+        [Display(Name = "Other")] Other = -1,
+        [Display(Name = "Check Point Quiz")] CheckpointQuiz = 1,
+        [Display(Name = "Practice Test")] PracticeTest = 2,
+        [Display(Name = "Quizbank")] Quizbank = 3,
+        [Display(Name = "Essay")] Essay = 4,
+        [Display(Name = "Flashcard Quizbank")] FlashcardQuizbank = 5,
+        [Display(Name = "Diagnostic Quiz")] DiagnosticQuiz = 6,
+        [Display(Name = "Qbuilder Quiz")] QbuilderQuiz = 7,
+        [Display(Name = "Feedback Quiz")] FeedbackQuiz = 8,
     }
 
     public enum ContainerMode
@@ -566,34 +521,25 @@ namespace KBR.Entity.Enums
 
     public enum AssignmentFormats
     {
-        [Display(Name = "AllTypes")]
-        AllTypes = -2,
-        [Display(Name = "Other")]
-        Other = -1,
-        [Display(Name = "None")]
-        None = 0,
-        [Display(Name = "Checkpoint Quiz")]
-        CheckpointQuiz = 1,
-        [Display(Name = "Practice Test")]
-        PracticeTest = 2,
-        [Display(Name = "QBank")]
-        Quizbank = 3,
-        [Display(Name = "Essay")]
-        Essay = 4,
-        [Display(Name = "Diagnostic")]
-        DiagnosticQuiz = 6,
-        [Display(Name = "Flex Flashcard")]
-        Flashcard = 7,
-        [Display(Name = "Workbook")]
-        Reading = 101,
-        [Display(Name = "Video")]
-        Video = 102,
-        [Display(Name = "Miscellaneous")]
-        Miscellaneous = 103,
-        [Display(Name = "Notes")]
-        Notes = 104,
+        [Display(Name = "AllTypes")] AllTypes = -2,
+        [Display(Name = "Other")] Other = -1,
+        [Display(Name = "None")] None = 0,
+        [Display(Name = "Checkpoint Quiz")] CheckpointQuiz = 1,
+        [Display(Name = "Practice Test")] PracticeTest = 2,
+        [Display(Name = "QBank")] Quizbank = 3,
+        [Display(Name = "Essay")] Essay = 4,
+        [Display(Name = "Diagnostic")] DiagnosticQuiz = 6,
+        [Display(Name = "Flex Flashcard")] Flashcard = 7,
+        [Display(Name = "Workbook")] Reading = 101,
+        [Display(Name = "Video")] Video = 102,
+        [Display(Name = "Miscellaneous")] Miscellaneous = 103,
+        [Display(Name = "Notes")] Notes = 104,
+
         [Display(Name = "Strength and Weakness Guide")]
-        ReviewTopicInPSP = 201
+        ReviewTopicInPSP = 201,
+
+        [Display(Name = "Interactive Homeroom")]
+        Homeroom = 105,
     }
 
     //public enum AssignmentFormats
@@ -719,9 +665,9 @@ namespace KBR.Entity.Enums
 
     public enum CompleteStatuses
     {
-        Incomplete = 1,//not start yet.
-        InProgress = 2,//suspended.
-        Complete = 3,//completed.
+        Incomplete = 1, //not start yet.
+        InProgress = 2, //suspended.
+        Complete = 3, //completed.
         MasteryAcheived = 4
     }
 
@@ -957,16 +903,16 @@ namespace KBR.Entity.Enums
 
     public enum FeatureOptions
     {
-        [Display(Name = "")]
-        NotSelected = -1,
-        [Display(Name = "Never show")]
-        NeverShow = 0,
-        [Display(Name = "Always show")]
-        AlwaysShow = 1,
+        [Display(Name = "")] NotSelected = -1,
+        [Display(Name = "Never show")] NeverShow = 0,
+        [Display(Name = "Always show")] AlwaysShow = 1,
+
         [Display(Name = "90 days before exam")]
         Before90DaysOfExam = 2,
+
         [Display(Name = "Disable link before 90 days")]
         DisableLinkBefore90Days = 3,
+
         [Display(Name = "Disable page before 90 days")]
         DisablePageBefore90Days = 4,
     }
@@ -985,6 +931,7 @@ namespace KBR.Entity.Enums
         MeetYourGrader = 10,
         ProgressToDate = 11
     }
+
     public enum ReleaseCycle
     {
         Feb = 1,
@@ -1009,14 +956,10 @@ namespace KBR.Entity.Enums
 
     public enum YearOfStudy
     {
-        [Display(Name = "--Select--")]
-        None = -1,
-        [Display(Name = "1L")]
-        L1 = 1,
-        [Display(Name = "2L")]
-        L2 = 2,
-        [Display(Name = "3L")]
-        L3 = 3,
+        [Display(Name = "--Select--")] None = -1,
+        [Display(Name = "1L")] L1 = 1,
+        [Display(Name = "2L")] L2 = 2,
+        [Display(Name = "3L")] L3 = 3,
         Done = 100
     }
 
@@ -1034,6 +977,7 @@ namespace KBR.Entity.Enums
         Medium = 1,
         High = 2,
     }
+
     public enum CustomerSupportMessages
     {
         IPLawSchoolNotAvailable = 1,
@@ -1137,14 +1081,17 @@ namespace KBR.Entity.Enums
 
     public enum EssayScoreIndicativeEnum
     {
-        [Display(Name = "")]
-        None = -1,
+        [Display(Name = "")] None = -1,
+
         [Display(Name = "Demonstrates Fundamental Deficiency")]
         WellBelowTheStandard = 1,
+
         [Display(Name = "Does Not Demonstrate Competency")]
         BelowTheStandard = 2,
+
         [Display(Name = "Demonstrates Some Competency")]
         MeetsTheStandard = 3,
+
         [Display(Name = "Demonstrates Sufficient Competency")]
         ExceedsTheStandard = 4
     }
@@ -1181,10 +1128,8 @@ namespace KBR.Entity.Enums
 
     public enum CertificationStatus
     {
-        [Display(Name = "Not Attempted")]
-        NotAttempted = 1,
-        [Display(Name = "Pending Review")]
-        PendingReview = 2,
+        [Display(Name = "Not Attempted")] NotAttempted = 1,
+        [Display(Name = "Pending Review")] PendingReview = 2,
         Certified = 3,
         Failed = 4
 
@@ -1234,14 +1179,10 @@ namespace KBR.Entity.Enums
 
     public enum RedirectedVia
     {
-        [ConstStr("KBR")]
-        KBR,
-        [ConstStr("PMBR")]
-        PMBR,
-        [ConstStr("KBR")]
-        Kaptest,
-        [ConstStr("MakerPrep")]
-        MakerPrep
+        [ConstStr("KBR")] KBR,
+        [ConstStr("PMBR")] PMBR,
+        [ConstStr("KBR")] Kaptest,
+        [ConstStr("MakerPrep")] MakerPrep
     }
 
     public enum VideoPlayerVersion
@@ -1254,14 +1195,10 @@ namespace KBR.Entity.Enums
 
     public enum VideoListType
     {
-        [ConstStr("none")]
-        None = 0,
-        [ConstStr("seek")]
-        seek = 1,
-        [ConstStr("video")]
-        video = 2,
-        [ConstStr("videoSet")]
-        videoSet = 3
+        [ConstStr("none")] None = 0,
+        [ConstStr("seek")] seek = 1,
+        [ConstStr("video")] video = 2,
+        [ConstStr("videoSet")] videoSet = 3
     }
 
     public enum MobileContainerCategory
@@ -1315,45 +1252,44 @@ namespace KBR.Entity.Enums
 
     public enum DataStatus : byte
     {
-        [ConstStr("inactive")]
-        [Display(Name = "InActive")]
+        [ConstStr("inactive")] [Display(Name = "InActive")]
         Inactive = 0,
-        [ConstStr("active")]
-        [Display(Name = "Active")]
+
+        [ConstStr("active")] [Display(Name = "Active")]
         Active = 1,
-        [ConstStr("deleted")]
-        [Display(Name = "Deleted")]
+
+        [ConstStr("deleted")] [Display(Name = "Deleted")]
         Deleted = 2,
-        [ConstStr("done")]
-        [Display(Name = "Done")]
+
+        [ConstStr("done")] [Display(Name = "Done")]
         Done = 3,
-        [ConstStr("completed")]
-        [Display(Name = "Completed")]
+
+        [ConstStr("completed")] [Display(Name = "Completed")]
         Completed = 4,
-        [ConstStr("canceled")]
-        [Display(Name = "Canceled")]
+
+        [ConstStr("canceled")] [Display(Name = "Canceled")]
         Canceled = 5,
-        [ConstStr("underway")]
-        [Display(Name = "Underway")]
+
+        [ConstStr("underway")] [Display(Name = "Underway")]
         Underway = 6,
     }
 
     public enum CourseType
     {
-        [ConstStr("Complete Bar Review Online")]
-        [Display(Name = "Complete Bar Review Online")]
+        [ConstStr("Complete Bar Review Online")] [Display(Name = "Complete Bar Review Online")]
         CompleteBarReviewOnline = 0,
-        [ConstStr("Complete Bar Review (In class)")]
-        [Display(Name = "Complete Bar Review (In class)")]
+
+        [ConstStr("Complete Bar Review (In class)")] [Display(Name = "Complete Bar Review (In class)")]
         CompleteBarReviewInClass = 1,
-        [ConstStr("General Bar Review Online")]
-        [Display(Name = "General Bar Review Online")]
-        GeneralBarReviewOnline = 2,
-        [ConstStr("General Bar Review (In class)")]
-        [Display(Name = "General Bar Review (In class)")]
+
+        [ConstStr("General Bar Review Online")] [Display(Name = "General Bar Review Online")]
+        GeneralBarReviewOnline =
+            2,
+
+        [ConstStr("General Bar Review (In class)")] [Display(Name = "General Bar Review (In class)")]
         GeneralBarReviewInClass = 3,
-        [ConstStr("Multistate")]
-        [Display(Name = "Multistate")]
+
+        [ConstStr("Multistate")] [Display(Name = "Multistate")]
         Multistate = 4
     }
 
@@ -1365,22 +1301,19 @@ namespace KBR.Entity.Enums
 
     public enum ContainerSessionStatus
     {
-        [ConstStr("none")]
-        [Display(Name = "None")]
+        [ConstStr("none")] [Display(Name = "None")]
         None = 0,
 
-        [ConstStr("completed")]
-        [Display(Name = "Completed")]
+        [ConstStr("completed")] [Display(Name = "Completed")]
         Completed = 1,
 
-        [ConstStr("inProgress")]
-        [Display(Name = "In-Progress")]
+        [ConstStr("inProgress")] [Display(Name = "In-Progress")]
         InProgress = 2,
 
-        [ConstStr("notStarted")]
-        [Display(Name = "Not Started")]
+        [ConstStr("notStarted")] [Display(Name = "Not Started")]
         NotStarted = 3
     }
+
     public enum DeviceType : byte
     {
         None = 0,
@@ -1395,40 +1328,29 @@ namespace KBR.Entity.Enums
         Sent = 2,
         Failed = 3
     }
+
     public enum UserTypes
     {
-        [Display(Name = "--Select--")]
-        None = -1,
-        [Display(Name = "Professor")]
-        Professor = 1,
-        [Display(Name = "Law School Admin")]
-        LawSchoolAdmin = 2
+        [Display(Name = "--Select--")] None = -1,
+        [Display(Name = "Professor")] Professor = 1,
+        [Display(Name = "Law School Admin")] LawSchoolAdmin = 2
     }
 
     public enum TimeLimit
     {
-        [Display(Name = "1.8 minutes")]
-        OnePointEightMins = 1,
-        [Display(Name = "2.0 minutes")]
-        TwoMins = 2,
-        [Display(Name = "2.5 minutes")]
-        TwoPointFiveMins = 3,
-        [Display(Name = "Unlimited")]
-        Unlimited = 4,
-        [Display(Name = "Tutor Mode")]
-        TutorMode = 5
+        [Display(Name = "1.8 minutes")] OnePointEightMins = 1,
+        [Display(Name = "2.0 minutes")] TwoMins = 2,
+        [Display(Name = "2.5 minutes")] TwoPointFiveMins = 3,
+        [Display(Name = "Unlimited")] Unlimited = 4,
+        [Display(Name = "Tutor Mode")] TutorMode = 5
     }
 
     public enum QbuilderOptions
     {
-        [Display(Name = "None")]
-        None = -1,
-        [Display(Name = "Never Show")]
-        NeverShow = 0,
-        [Display(Name = "Always Show")]
-        AlwaysShow = 1,
-        [Display(Name = "Show After")]
-        ShowAfter = 2,
+        [Display(Name = "None")] None = -1,
+        [Display(Name = "Never Show")] NeverShow = 0,
+        [Display(Name = "Always Show")] AlwaysShow = 1,
+        [Display(Name = "Show After")] ShowAfter = 2,
     }
 
     public enum QbuilderQuizStatus
@@ -1462,16 +1384,11 @@ namespace KBR.Entity.Enums
 
     public enum CourseCycle
     {
-        [Display(Name = "None")]
-        None = 0,
-        [Display(Name = "Winter")]
-        Winter = 1,
-        [Display(Name = "Spring")]
-        Spring = 2,
-        [Display(Name = "Summer")]
-        Summer = 3,
-        [Display(Name = "Fall")]
-        Fall = 4
+        [Display(Name = "None")] None = 0,
+        [Display(Name = "Winter")] Winter = 1,
+        [Display(Name = "Spring")] Spring = 2,
+        [Display(Name = "Summer")] Summer = 3,
+        [Display(Name = "Fall")] Fall = 4
     }
 
     public enum RatingScale
@@ -1508,6 +1425,7 @@ namespace KBR.Entity.Enums
         Generic = 1,
         Feedback = 2
     }
+
     public enum LiveAttendanceStatus
     {
         Open = 1,
@@ -1526,12 +1444,9 @@ namespace KBR.Entity.Enums
 
     public enum StudentMigrationType
     {
-        [Display(Name = "Qbank")]
-        Qbank1 = 1,
-        [Display(Name = "Qbank")]
-        Qbank2 = 2,
-        [Display(Name = "Flex")]
-        Flex = 3
+        [Display(Name = "Qbank")] Qbank1 = 1,
+        [Display(Name = "Qbank")] Qbank2 = 2,
+        [Display(Name = "Flex")] Flex = 3
     }
 
     public enum StudentMigrationStatus
@@ -1570,6 +1485,7 @@ namespace KBR.Entity.Enums
         Reports = 3,
         MakerPrep = 4
     }
+
     public enum AttendanceVia
     {
         None = -1,
@@ -1598,16 +1514,102 @@ namespace KBR.Entity.Enums
     //}
     public enum ContainerSubTypes
     {
-        [Display(Name = "NA")]
-        NA = -1,
-        [Display(Name = "Midterm")]
-        Midterm = 1,
-        [Display(Name = "Final")]
-        Final = 2,
-        [Display(Name = "QFormative")]
-        QFormative = 3,
+        [Display(Name = "NA")] NA = -1,
+        [Display(Name = "Midterm")] Midterm = 1,
+        [Display(Name = "Final")] Final = 2,
+        [Display(Name = "QFormative")] QFormative = 3,
+
         [Display(Name = "Simulated Practice Exam")]
         SPE = 4
 
     }
+
+    public enum LookupCategories
+    {
+        AnswerStatus = 2,
+        ArchivalStatus = 15,
+        AssignmentModule = 13,
+        AttachmentCategory = 26,
+        CourseMaterialType = 36,
+        EssayType = 37
+    }
+
+    public enum CourseBulkUpdate
+    {
+        PushTolive = 1,
+        TestAnalysis = 2,
+        GenerateRanking = 3
+    }
+
+    public enum CourseBulkOverwrite
+    {
+        TestAnalysis = 1,
+        EssayMCQFrequency = 2
+    }
+
+    public enum APIResponseStatus
+    {
+        Success = 1,
+        Failed = 2
+    }
+
+    public enum Push2LiveTables
+    {
+        EssayStates,
+        State,
+        KBREnrollmentAgreement,
+        Course,
+        CourseAdditionalInfo,
+        CourseVideoSettings,
+        L1Topic,
+        State_Category,
+        L2Topic,
+        L3Topic,
+        L4Topic,
+        Session,
+        Course_Session,
+        Assignment,
+        Container,
+        Content,
+        ContainerSession,
+        Container_Content,
+        Course_Container,
+        State_Course,
+        AnswerOption,
+        EssayIssue,
+        L2Topic_Content,
+        L3Topic_Content,
+        L3Topic_Exam,
+        EssayAdditionalInfo,
+        TexasQuestion,
+        Compilation,
+        Compilation_Content,
+        Course_Feature,
+        WeeklyDigest,
+        StateFSPInfo,
+        MBE_MCQ_Frequency,
+        Essay_MCQ_Frequency,
+        FSPMaster,
+        ESPTask,
+        EssaySubstantiveSummary,
+        EssayIndicativeScoreMapping,
+        EssayScoreIndicative,
+        EssayScoreIndicativeBreakdown,
+        EssaySubstantiveOpportunity,
+        SkillMaster,
+        StateSkill,
+        Posting,
+        PostingRecipient,
+        PostingAttachment,
+        StateSettings,
+        AnswerOption_SkillMaster,
+        Content_SkillMaster,
+        CourseTestAnalysis
+    }
+
+    //public enum KaptestPasswordStatus
+    //{
+    //    Success=1,
+    //    Failed=2
+    //}
 }
